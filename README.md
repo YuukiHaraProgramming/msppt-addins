@@ -8,8 +8,8 @@
 2. 適当な PowerPoint ファイルで VBE を起動し、マクロを作成する。
 
 
-[!TIP]
-Visual Basic Editor (VBE) を起動するには、Alt + F11
+> [!TIP]
+> Visual Basic Editor (VBE) を起動するには、Alt + F11
 
 3. 「プロジェクト」ウィンドウで右クリックし、メニューから「ファイルのエクスポート」を選択して.basファイルで書き出す。
 尚、`template/bas` 内に保存すると管理しやすい。
@@ -60,8 +60,8 @@ Visual Basic Editor (VBE) を起動するには、Alt + F11
 </Relationships>
 ```
 
-[!TIP]
-.zip内のファイルは直接編集できないので、編集する必要がある場合は外部にコピーし編集後、適当なディレクトリに移す。
+> [!TIP]
+> .zip内のファイルは直接編集できないので、編集する必要がある場合は外部にコピーし編集後、適当なディレクトリに移す。
 
 8. `template/template.zip`を`template/template.pptm`に拡張子を戻し、リボンを確認する。
 
@@ -76,6 +76,6 @@ Visual Basic Editor (VBE) を起動するには、Alt + F11
 
 
 
-[!NOTE]
-[PowerPointでマクロをアドイン化しリボンに追加する方法](https://ppdtp.com/powerpoint/macro-custom-ui/)を参考にしています。
+> [!NOTE]
+> [PowerPointでマクロをアドイン化しリボンに追加する方法](https://ppdtp.com/powerpoint/macro-custom-ui/)を参考にしています。
 
