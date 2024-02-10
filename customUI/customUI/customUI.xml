@@ -11,6 +11,13 @@
 <button id="Button1-3" label="Sizes" imageMso="MacroPlay" size="normal" onAction="AlignBlockSizes" />
 </group>
 
+<group id="Group2" label="MoveObjectsToAlign">
+<button id="Button2-1" label="ToLeft" imageMso="ObjectsAlignLeft" size="large" onAction="MoveLeftToLastRight" />
+<button id="Button2-2" label="ToRight" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
+<button id="Button2-3" label="ToUp" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
+<button id="Button2-4" label="ToDown" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
+</group>
+
 </tab>
 </tabs>
 </ribbon>
