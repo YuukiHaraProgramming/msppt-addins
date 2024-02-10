@@ -66,7 +66,6 @@
 8. `template/template.zip`を`template/template.pptm`に拡張子を戻し、リボンを確認する。
 
 9. `template/template.pptm`を開き、Ctrl+Shift+Sで拡張子を.ppamを選び、`template.ppam`を新たに保存する。
-<br>
 保存先について、Winの場合は、`C:\Users\user_name\AppData\Roaming\Microsoft\AddIns`に置くとよいが必須ではない。
 
 後はこの.ppamファイルを読み込めば自作AddInを使用することができる。
