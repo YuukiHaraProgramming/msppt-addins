@@ -3,7 +3,6 @@
 ## 機能を追加する (新たに AddIn を作成する)
 
 1. 機能を追加したい AddIn を選ぶ。新たに作成する場合は template ディレクトリを複製し、適当な名前をつける。
-<br>
 以下では作業ディレクトリ名を `template` として説明する。
 
 2. 適当な PowerPoint ファイルで VBE を起動し、マクロを作成する。
@@ -13,17 +12,13 @@
 Visual Basic Editor (VBE) を起動するには、Alt + F11
 
 3. 「プロジェクト」ウィンドウで右クリックし、メニューから「ファイルのエクスポート」を選択して.basファイルで書き出す。
-<br>
 尚、`template/bas` 内に保存すると管理しやすい。
 
 4. `template/template.pptm`を開き、VBEを起動する。
-<br>
 その後、「プロジェクト」ウィンドウで右クリックし、メニューから「ファイルのインポート」を選択し、書き出した.basファイルを読み込む。
 
 5. `template/customUI/customUI.xml`を適宜編集する。
-<br>
 以下は例。アイコンは[Office 365アイコン(imageMso)一覧(O)](https://www.ka-net.org/blog/?p=11361)を参照。
-<br>
 ```customUI.xml
 <?xml version="1.0" encoding="utf-8"?>
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
@@ -52,9 +47,8 @@ Visual Basic Editor (VBE) を起動するには、Alt + F11
 6. `template/template.pptm`を`template/template.zip`に拡張子を変更する。
 
 7.  `customUI.xml`が入った `template/customUI`を、 `template/template.zip`内にコピーする。
-<br>
 また、 `template/template.zip/_rels/.rels`を開き、以下の内容になっていることを確認する。
-<br>
+
 ```.rels
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
