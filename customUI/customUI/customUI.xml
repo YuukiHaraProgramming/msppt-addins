@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+<ribbon startFromScratch="false">
+<tabs>
+<tab id="MyTab1" label="CustomUI">
+
+
+<group id="Group1" label="AlignBlocks">
+<button id="Button1-1" label="Widths" imageMso="MacroPlay" size="normal" onAction="AlignBlockWidths" />
+<button id="Button1-2" label="Heights" imageMso="MacroPlay" size="normal" onAction="AlignBlockHeights" />
+<button id="Button1-3" label="Sizes" imageMso="MacroPlay" size="normal" onAction="AlignBlockSizes" />
+</group>
+
+</tab>
+</tabs>
+</ribbon>
+</customUI>
