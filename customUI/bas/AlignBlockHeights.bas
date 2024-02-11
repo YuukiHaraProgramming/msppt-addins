@@ -18,5 +18,10 @@ Sub AlignBlockHeights()
     For Each shape In selectedShapes
         shape.Height = referenceHeight
     Next shape
+    
+    ' クリーンアップ
+    Set selectedShapes = Nothing
+    Set referenceShape = Nothing
+    Set shape = Nothing
 End Sub
 

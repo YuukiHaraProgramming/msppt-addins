@@ -18,5 +18,10 @@ Sub AlignBlockWidths()
     For Each shape In selectedShapes
         shape.Width = referenceWidth
     Next shape
+    
+    ' クリーンアップ
+    Set selectedShapes = Nothing
+    Set referenceShape = Nothing
+    Set shape = Nothing
 End Sub
 
