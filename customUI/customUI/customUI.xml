@@ -6,9 +6,9 @@
 
 
 <group id="Group1" label="AlignBlocks">
-<button id="Button1-1" label="Widths" imageMso="MacroPlay" size="normal" onAction="AlignBlockWidths" />
-<button id="Button1-2" label="Heights" imageMso="MacroPlay" size="normal" onAction="AlignBlockHeights" />
-<button id="Button1-3" label="Sizes" imageMso="MacroPlay" size="normal" onAction="AlignBlockSizes" />
+<button id="Button1-1" label="Widths" imageMso="SizeToControlWidth" size="normal" onAction="AlignBlockWidths" />
+<button id="Button1-2" label="Heights" imageMso="SizeToControlHeight" size="normal" onAction="AlignBlockHeights" />
+<button id="Button1-3" label="Sizes" imageMso="SizeToControlHeightAndWidth" size="normal" onAction="AlignBlockSizes" />
 </group>
 
 <group id="Group2" label="MoveObjectsToAlign">
@@ -16,6 +16,11 @@
 <button id="Button2-2" label="ToRight" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
 <button id="Button2-3" label="ToUp" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
 <button id="Button2-4" label="ToDown" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
+</group>
+
+<group id="Group3" label="CreateIncircle">
+<button id="Button3-1" label="ForTriangle" imageMso="ShapeIsoscelesTriangle" size="normal" onAction="CreateIncircleForTriangle" />
+<button id="Button3-2" label="ForInvertedTriangle" imageMso="MacroPlay" size="normal" onAction="CreateIncircleForInvertedTriangle" />
 </group>
 
 </tab>
