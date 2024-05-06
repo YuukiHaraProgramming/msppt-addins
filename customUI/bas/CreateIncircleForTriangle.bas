@@ -9,16 +9,16 @@ Sub CreateIncircleForTriangle()
     Dim centerX, centerY As Single
     Dim incircle As Shape
     
-    ' �O�p�`���I������Ă��邩�m�F
+    ' 三角形が選択されているか確認
     If ActiveWindow.Selection.Type <> ppSelectionShapes Then
-        MsgBox "�O�p�`���I������Ă��܂���B"
+        MsgBox "三角形が選択されていません。"
         Exit Sub
     End If
     
-    ' �I�������O�p�`���擾
+    ' 選択した三角形を取得
     Set selectedShape = ActiveWindow.Selection.ShapeRange(1)
     
-    ' �O�p�`�̒��_���W���擾
+    ' 三角形の頂点座標を取得
     vertices(1, 1) = selectedShape.Left
     vertices(1, 2) = selectedShape.Top + selectedShape.Height
     vertices(2, 1) = selectedShape.Left + selectedShape.Width
@@ -26,33 +26,33 @@ Sub CreateIncircleForTriangle()
     vertices(3, 1) = (selectedShape.Left + vertices(2, 1)) / 2
     vertices(3, 2) = selectedShape.Top
     
-    ' �O�p�`�̕ӂ̒������v�Z
+    ' 三角形の辺の長さを計算
     sideAB = Distance(vertices(1, 1), vertices(1, 2), vertices(2, 1), vertices(2, 2))
     sideBC = Distance(vertices(2, 1), vertices(2, 2), vertices(3, 1), vertices(3, 2))
     sideCA = Distance(vertices(3, 1), vertices(3, 2), vertices(1, 1), vertices(1, 2))
     
-    ' �w�����̌�����p���ĎO�p�`�̖ʐς��v�Z
+    ' ヘロンの公式を用いて三角形の面積を計算
     semiPerimeter = (sideAB + sideBC + sideCA) / 2
     triangleArea = Sqr(semiPerimeter * (semiPerimeter - sideAB) * (semiPerimeter - sideBC) * (semiPerimeter - sideCA))
     
-    ' ���ډ~�̔��a���v�Z
+    ' 内接円の半径を計算
     inradius = triangleArea / semiPerimeter
     
-    ' �O�p�`�̓��S�̍��W���v�Z
+    ' 三角形の内心の座標を計算
     centerX = (sideBC * vertices(1, 1) + sideCA * vertices(2, 1) + sideAB * vertices(3, 1)) / (sideAB + sideBC + sideCA)
     centerY = (sideBC * vertices(1, 2) + sideCA * vertices(2, 2) + sideAB * vertices(3, 2)) / (sideAB + sideBC + sideCA)
     
-    ' �~���쐬
+    ' 円を作成
     Set incircle = ActiveWindow.View.Slide.Shapes.AddShape(msoShapeOval, centerX - inradius, centerY - inradius, 2 * inradius, 2 * inradius)
-    '�}�`�̐��Ȃ�
+    ' 図形の線なし
     incircle.Line.Visible = msoFalse
     
-    ' �N���[���A�b�v
+    ' クリーンアップ
     Set selectedShape = Nothing
     Set incircle = Nothing
 End Sub
 
-' 2�_�Ԃ̋������v�Z����֐�
+' 2点間の距離を計算する関数
 Function Distance(x1 As Single, y1 As Single, x2 As Single, y2 As Single) As Single
     Distance = Sqr((x2 - x1) ^ 2 + (y2 - y1) ^ 2)
 End Function
