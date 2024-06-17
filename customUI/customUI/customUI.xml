@@ -2,20 +2,20 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
 <ribbon startFromScratch="false">
 <tabs>
-<tab id="MyTab1" label="CustomUI">
+<tab id="MyTab1" label="MyAddin" keytip="M">
 
 
 <group id="Group1" label="AlignBlocks">
-<button id="Button1-1" label="Widths" imageMso="SizeToControlWidth" size="normal" onAction="AlignBlockWidths" />
-<button id="Button1-2" label="Heights" imageMso="SizeToControlHeight" size="normal" onAction="AlignBlockHeights" />
-<button id="Button1-3" label="Sizes" imageMso="SizeToControlHeightAndWidth" size="normal" onAction="AlignBlockSizes" />
+<button id="Button1-1" label="Widths" keytip="W" imageMso="SizeToControlWidth" size="normal" onAction="AlignBlockWidths" />
+<button id="Button1-2" label="Heights" keytip="H" imageMso="SizeToControlHeight" size="normal" onAction="AlignBlockHeights" />
+<button id="Button1-3" label="Sizes" keytip="S" imageMso="SizeToControlHeightAndWidth" size="normal" onAction="AlignBlockSizes" />
 </group>
 
 <group id="Group2" label="MoveObjectsToAlign">
-<button id="Button2-1" label="ToLeft" imageMso="ObjectsAlignLeft" size="large" onAction="MoveLeftToLastRight" />
-<button id="Button2-2" label="ToRight" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
-<button id="Button2-3" label="ToUp" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
-<button id="Button2-4" label="ToDown" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
+<button id="Button2-1" label="ToLeft" keytip="2L" imageMso="ObjectsAlignLeft" size="large" onAction="MoveLeftToLastRight" />
+<button id="Button2-2" label="ToRight" keytip="2R" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
+<button id="Button2-3" label="ToUp" keytip="2U" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
+<button id="Button2-4" label="ToDown" keytip="2D" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
 </group>
 
 <group id="Group3" label="CreateIncircle">
