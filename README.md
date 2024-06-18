@@ -18,7 +18,7 @@
 その後、「プロジェクト」ウィンドウで右クリックし、メニューから「ファイルのインポート」を選択し、書き出した.basファイルを読み込む。
 
 5. `template/customUI/customUI.xml`を適宜編集する。
-以下は例。アイコンは[Office 365アイコン(imageMso)一覧(O)](https://www.ka-net.org/blog/?p=11361)を参照。
+以下は例。アイコンは[Office 365アイコン(imageMso)一覧(O)](https://www.ka-net.org/blog/?p=11361)や[ImageMSO List Reference](https://bert-toolkit.com/imagemso-list.html)を参照。
 ```customUI.xml
 <?xml version="1.0" encoding="utf-8"?>
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
