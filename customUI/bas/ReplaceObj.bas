@@ -1,4 +1,5 @@
 Attribute VB_Name = "ReplaceObj"
+
 Sub ReplaceObj()
     Dim selectedShapes As ShapeRange
     Dim referenceShape As shape

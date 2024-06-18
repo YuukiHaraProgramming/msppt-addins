@@ -1,4 +1,5 @@
 Attribute VB_Name = "SwapObj"
+
 Sub SwapObj()
     Dim selectedShapes As ShapeRange
     Dim positions() As Variant
