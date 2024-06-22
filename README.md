@@ -22,25 +22,25 @@
 ```customUI.xml
 <?xml version="1.0" encoding="utf-8"?>
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
-<ribbon startFromScratch="false">
-<tabs>
-<tab id="MyTab1" label="タブ名">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="MyTab1" label="タブ名" keytip="XX">
 
-<group id="Group1" label="グループ名1">
-<button id="Button1-1" label="ボタン名1" imageMso="MacroPlay" size="normal" onAction="マクロ名1" />
-<button id="Button1-2" label="ボタン名2" imageMso="MacroPlay" size="normal" onAction="マクロ名2" />
-<button id="Button1-3" label="ボタン名3" imageMso="MacroPlay" size="normal" onAction="マクロ名3" />
-</group>
+        <group id="Group1" label="グループ名1">
+          <button id="Button1-1" label="ボタン名1" keytip="A" imageMso="MacroPlay" size="normal" onAction="マクロ名1" />
+          <button id="Button1-2" label="ボタン名2" keytip="B" imageMso="MacroPlay" size="normal" onAction="マクロ名2" />
+          <button id="Button1-3" label="ボタン名3" keytip="C" imageMso="MacroPlay" size="normal" onAction="マクロ名3" />
+        </group>
 
-<group id="Group2" label="グループ名2">
-<button id="Button2-1" label="ボタン名4" imageMso="MacroPlay" size="normal" onAction="マクロ名4" />
-<button id="Button2-2" label="ボタン名5" imageMso="MacroPlay" size="normal" onAction="マクロ名5" />
-<button id="Button2-3" label="ボタン名6" imageMso="MacroPlay" size="normal" onAction="マクロ名6" />
-</group>
+        <group id="Group2" label="グループ名2">
+          <button id="Button2-1" label="ボタン名4" keytip="D" imageMso="MacroPlay" size="normal" onAction="マクロ名4" />
+          <button id="Button2-2" label="ボタン名5" keytip="E" imageMso="MacroPlay" size="normal" onAction="マクロ名5" />
+          <button id="Button2-3" label="ボタン名6" keytip="F" imageMso="MacroPlay" size="normal" onAction="マクロ名6" />
+        </group>
 
-</tab>
-</tabs>
-</ribbon>
+      </tab>
+    </tabs>
+  </ribbon>
 </customUI>
 ```
 

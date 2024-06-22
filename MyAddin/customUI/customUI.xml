@@ -5,7 +5,7 @@
       <tab id="MyTab1" label="MyAddin" keytip="M">
 
 
-        <group id="Group1" label="AlignBlocks">
+        <group id="Group1" label="ObjectSetting">
           <button id="Button1-1" label="Widths" keytip="W" imageMso="SizeToControlWidth" size="large" onAction="AlignBlockWidths" />
           <button id="Button1-2" label="Heights" keytip="H" imageMso="SizeToControlHeight" size="large" onAction="AlignBlockHeights" />
           <button id="Button1-3" label="Sizes" keytip="S" imageMso="SizeToControlHeightAndWidth" size="large" onAction="AlignBlockSizes" />
