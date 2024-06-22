@@ -1,4 +1,5 @@
 Attribute VB_Name = "MiddleAlignToLast"
+
 Sub MiddleAlignToLast()
     Dim selectedShapes As ShapeRange
     Dim lastShape As shape

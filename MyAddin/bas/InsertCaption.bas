@@ -1,4 +1,5 @@
 Attribute VB_Name = "InsertCaption"
+
 Sub InsertCaption()
     Dim slide As slide
     Dim line As shape

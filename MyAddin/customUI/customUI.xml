@@ -2,30 +2,43 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
   <ribbon startFromScratch="false">
     <tabs>
-      <tab id="MyTab1" label="MyAddin" keytip="M">
+      <tab id="MyAddin" label="MyAddin" keytip="M">
 
-
-        <group id="Group1" label="ObjectSetting">
-          <button id="Button1-1" label="Widths" keytip="W" imageMso="SizeToControlWidth" size="large" onAction="AlignBlockWidths" />
-          <button id="Button1-2" label="Heights" keytip="H" imageMso="SizeToControlHeight" size="large" onAction="AlignBlockHeights" />
-          <button id="Button1-3" label="Sizes" keytip="S" imageMso="SizeToControlHeightAndWidth" size="large" onAction="AlignBlockSizes" />
+        <group id="ObjectSetting" label="ObjectSetting">
+          <button id="B-W" label="Widths" keytip="W" imageMso="SizeToControlWidth" size="large" onAction="AlignBlockWidths" />
+          <button id="B-H" label="Heights" keytip="H" imageMso="SizeToControlHeight" size="large" onAction="AlignBlockHeights" />
+          <button id="B-S" label="Sizes" keytip="S" imageMso="SizeToControlHeightAndWidth" size="large" onAction="AlignBlockSizes" />
         </group>
 
-        <group id="Group2" label="MoveObjectsToAlign">
-          <button id="Button2-1" label="ToLeft" keytip="2L" imageMso="ObjectsAlignLeft" size="large" onAction="MoveLeftToLastRight" />
-          <button id="Button2-2" label="ToRight" keytip="2R" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
-          <button id="Button2-3" label="ToUp" keytip="2U" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
-          <button id="Button2-4" label="ToDown" keytip="2D" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
+        <group id="WrapText" label="WrapText">
+          <button id="B-T" label="ON/OFF" keytip="T" imageMso="WrapText" size="large" onAction="ToggleTextWrap" />
         </group>
 
-        <group id="Group3" label="ChangeObjects">
-          <button id="Button3-1" label="SwapObj" keytip="OS" imageMso="CircularReferences" size="large" onAction="SwapObj" />
-          <button id="Button3-2" label="ReplaceObj" keytip="OR" imageMso="OpenSharedCalendar" size="large" onAction="ReplaceObj" />
+        <group id="MoveObjectsToAlign" label="MoveObjectsToAlign">
+          <button id="B-2L" label="ToLeft" keytip="2L" imageMso="ObjectsAlignLeft" size="large" onAction="MoveLeftToLastRight" />
+          <button id="B-2R" label="ToRight" keytip="2R" imageMso="ObjectsAlignRight" size="normal" onAction="MoveRightToLastLeft" />
+          <button id="B-2U" label="ToUp" keytip="2U" imageMso="ObjectsAlignTop" size="normal" onAction="MoveUpToLastBottom" />
+          <button id="B-2D" label="ToDown" keytip="2D" imageMso="ObjectsAlignBottom" size="normal" onAction="MoveDownToLastTop" />
         </group>
 
-        <group id="Group4" label="CreateIncircle">
-          <button id="Button4-1" label="ForTriangle" keytip="TR" imageMso="ShapeIsoscelesTriangle" size="normal" onAction="CreateIncircleForTriangle" />
-          <button id="Button4-2" label="ForInvertedTriangle" keytip="IT" imageMso="MacroPlay" size="normal" onAction="CreateIncircleForInvertedTriangle" />
+        <group id="ObjectsAlign" label="ObjectsAlign">
+          <button id="B-AC" label="Center" keytip="AC" imageMso="ObjectsAlignCenterHorizontal" size="large" onAction="CenterAlignToLast" />
+          <button id="B-AM" label="Middle" keytip="AM" imageMso="ObjectsAlignMiddleVertical" size="large" onAction="MiddleAlignToLast" />
+        </group>
+
+        <group id="ChangeObjects" label="ChangeObjects">
+          <button id="B-OS" label="SwapObj" keytip="OS" imageMso="CircularReferences" size="large" onAction="SwapObj" />
+          <button id="B-OR" label="ReplaceObj" keytip="OR" imageMso="OpenSharedCalendar" size="large" onAction="ReplaceObj" />
+        </group>
+
+        <group id="InsertTemplate" label="InsertTemplate">
+          <button id="B-IC" label="Caption" keytip="IC" imageMso="ChartTitle" size="large" onAction="InsertCaption" />
+          <button id="B-IS" label="Source" keytip="IS" imageMso="TextBoxInsertGallery" size="large" onAction="InsertSource" />
+        </group>
+
+        <group id="CreateIncircle" label="CreateIncircle">
+          <button id="B-XT" label="ForTriangle" keytip="XT" imageMso="ShapeIsoscelesTriangle" size="normal" onAction="CreateIncircleForTriangle" />
+          <button id="B-XI" label="ForInvertedTriangle" keytip="XI" imageMso="MacroPlay" size="normal" onAction="CreateIncircleForInvertedTriangle" />
         </group>
 
       </tab>

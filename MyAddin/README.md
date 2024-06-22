@@ -9,6 +9,10 @@
 - AlignBlockSizes
   - 最後に選ばれたオブジェクトを基準に、複数のオブジェクトの横幅と縦幅を揃える。
 
+## WrapText
+
+- ToggleTextWrap
+  - 選択したオブジェクトにおいて、「図形内でテキストを折り返す」の設定をON/OFFする。
 
 ## MoveObjectsToAlign
 
@@ -21,11 +25,23 @@
 - MoveDownToLastTop
   - 最後に選ばれたオブジェクトを基準とし、基準の上端とその他のオブジェクトの下端が一致するように、その他のオブジェクトを下へ移動する。
 
+## ObjectsAlign
+- CenterAlignToLast
+  - 最後に選択したオブジェクトの位置を動かさずに左右中央揃えをする。
+- MiddleAlignToLast
+  - 最後に選択したオブジェクトの位置を動かさずに上下中央揃えをする。
+
 ## ChangeObjects
 - SwapObj
   - オブジェクトの位置を選択した順番に移動させる。例えばA,B,Cの順番にオブジェクトを選択した場合、Bの位置にAを、Cの位置Bを、Aの位置にCを移動する。選択するオブジェクトが2つの場合、位置がSwapするような挙動を示す。
 - ReplaceObj
   - 選択したオブジェクト全てを、最後に選択したオブジェクトに置換する。
+
+## InsertTemplate
+- InsertCaption
+  - キャプションの入力欄を、既定の位置に挿入する。
+- InsertSource
+  - 出所の入力欄を、規定の位置に挿入する。
 
 ## CreateIncircle
 三角形を選択した状態で実行すると内接円を作成する。

@@ -1,4 +1,5 @@
 Attribute VB_Name = "ToggleTextWrap"
+
 Sub ToggleTextWrap()
     Dim selectedShapes As ShapeRange
     Dim shape As shape
